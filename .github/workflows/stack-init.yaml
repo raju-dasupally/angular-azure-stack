@@ -32,7 +32,10 @@
             npm install -g @angular/cli@latest
 
         - name: "Generate Angular code"
-          run: ng new myNewApp
+          run: |
+            ng new myNewApp
+            cp -r myNewApp/* .
+            rm -rf myNewApp
             
         - name: Configure git
           run: |
