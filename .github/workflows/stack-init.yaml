@@ -34,6 +34,8 @@
         - name: "Generate Angular code"
           run: |
             ng new myNewApp
+            
+        - run: |
             cp -r myNewApp/* .
             rm -rf myNewApp
             
