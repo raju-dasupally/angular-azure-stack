@@ -36,7 +36,7 @@ jobs:
           ng new myNewApp
 
       - run: |
-          cp -r myNewApp/* .
+          mv myNewApp/* .
           rm -rf myNewApp
 
       - name: Configure git
