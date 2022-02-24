@@ -1,4 +1,4 @@
-version: 0.2.0   
+version: 0.1.0   
 
 name: angular-azure-stack
 description: A stack to deploy Angular app to Azure
@@ -20,12 +20,12 @@ inputs:
     required: true
 
 configs:
-     repo-metadata:
-        parameters:
-          description: 'Angular app hosted in azure'
-          secrets: 
-          - name: AZURE_WEBAPP_PUBLISH_PROFILE
-            value: ${{inputs.AZURE_WEBAPP_PUBLISH_PROFILE}}
+   repo-metadata:
+      parameters:
+        description: 'Angular app hosted in azure'
+        secrets: 
+        - name: AZURE_WEBAPP_PUBLISH_PROFILE
+          value: ${{inputs.AZURE_WEBAPP_PUBLISH_PROFILE}}
         topics:
         - angular
         - azure
